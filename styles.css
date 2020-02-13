@@ -1,0 +1,129 @@
+/* CSS Document */
+.main-text { font-family: Roboto; 
+font-size: 1.125rem;}
+
+.author-text { font-family: Poppins; 
+color: #393e46;
+font-size: 1.5rem;}
+
+.top-container {
+background-color: #fff;
+position: relative;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.middle-container{
+	background-color: #2F9AF3;
+	position: center;
+	text-align: center;
+	width: 2000px;
+	height: 250px;
+	margin: 150px 0;
+}
+
+.bottom-container {
+	position: relative;
+	width: 200px; 
+	height: 200px;
+	
+}
+/* CARDS */
+
+.container {
+	display: grid; 
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 40px;
+	margin: 0 5%;
+	background-color: #C4EFE2;
+}
+
+.grid-kid  {
+	border-top: 4px solid;
+	border-radius: 5px; 
+	box-shadow: 5px 10px 8px #888888;
+	height: 280px;
+}
+
+.grid-kid img {
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.card1 {
+	float: right;
+	margin-right: 30px; 
+	margin-top: 20px;
+}
+
+.card1 {
+	border-color: hsl(180, 62%, 55%);
+	grid-area: 2 / 1 / 4 / 2;
+}
+
+.card2 {
+	border-color: hsl(0, 78%, 62%);
+	grid-area: 1 / 2 / 3 / 3;
+}
+
+.card3 {
+	border-color: hsl(34, 97%, 64%);
+	grid-area: 3 / 2 / 5 / 3;
+}
+
+.card4 {
+	border-color: hsl(212, 86%, 64%);
+	grid-area: 2 / 3 / 4 / 4;
+}
+/* FOOTER */
+
+footer{
+	margin-top: 60px;
+	padding-top: 10px; 
+	background-color: lightgray;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* @MEDIA */
+
+@media only screen and (max-width: 920px) {
+	body {
+		font-size: 18px;
+	}
+	
+	/* HEADER */
+	H2 {
+		font-size: 1.2rem;
+	}
+	header {
+		grid-template-columns: 1fr;
+		margin: 60px 20px;
+		grid-gap: 10px
+	}
+	
+	/* CARDS */
+	
+	.container {
+		grid-template-columns: 1fr;
+	}
+	
+	.card1 {
+		grid-area: 1;
+	}
+	
+	.card2 {
+		grid-area: 2;
+	}
+	
+	.card3 {
+		grid-area: 3;
+	} 
+	
+	.card4 {
+		grid-area: 4;
+	}
+	
+}
